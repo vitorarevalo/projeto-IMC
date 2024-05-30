@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body, html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(63, 63, 63);
+    background: url(../img/fundo.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
