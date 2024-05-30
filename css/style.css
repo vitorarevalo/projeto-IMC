@@ -1,9 +1,13 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins';
+    color: white;
 }
 
 
@@ -26,13 +30,9 @@ main{
     width: 900px;
     height: 500px;
     background-color: rgb(15, 15, 15);
+    box-shadow: 1px 1px 17px rgba(0, 0, 0, 0.486);
 }
 
-#calculo{
-    width: 50%;
-    height: 100%;
-    background-color: rgb(128, 0, 0);
-}
 
 
 #imagem{
@@ -42,10 +42,84 @@ main{
     width: 50%;
     height: 100%;
     background-color: rgb(15, 15, 15);
-
+    
 }
+
+#calculo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(65, 60, 60);
+}
+
+#calculo h1{
+    color: white;
+    font-weight: 500;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    gap: 20px;
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 
 
 img{
     width: 500px;
+}
+
+#calcular{
+    background-color: #a82727;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+#calcular:hover{
+    background-color: #d31e1e;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.linha{
+    background-color: #d31e1e;
+    height: 3px;
+    width: 50px;
+}
+
+
+input[type=number]{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(85, 85, 85);
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    color: white;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+
+
+.parte1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
