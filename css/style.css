@@ -107,6 +107,13 @@ input[type=number]{
     color: white;
     padding: 5px;
     letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+
+input[type=number]:active{
+    background-color: rgb(94, 94, 94);
+    transition: 0.3s;
 }
 
 
