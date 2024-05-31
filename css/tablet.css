@@ -30,7 +30,7 @@
     
     main{
         display: flex;
-        width: 750px;
+        width: 650px;
         height: 500px;
         background-color: rgb(15, 15, 15);
         box-shadow: 1px 1px 17px rgba(0, 0, 0, 0.486);
