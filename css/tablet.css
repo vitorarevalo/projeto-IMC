@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    
+    
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins';
+        color: white;
+    }
+    
+    
+    body, html{
+        height: 100%;
+    }
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(63, 63, 63);
+        background: url(../img/fundo.png) no-repeat center center fixed;
+        background-size: cover;
+    }
+    
+    main{
+        display: flex;
+        width: 750px;
+        height: 500px;
+        background-color: rgb(15, 15, 15);
+        box-shadow: 1px 1px 17px rgba(0, 0, 0, 0.486);
+    }
+    
+    
+    
+    #imagem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        background-color: rgb(15, 15, 15);
+        
+    }
+    
+    
+    
+    #calculo h1{
+        color: white;
+        font-weight: 500;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
+    }
+    
+    input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    
+    
+    img{
+        width: 400px;
+    }
+    
+    #calcular{
+        background-color: #a82727;
+        outline: none;
+        box-shadow: none;
+        border: none;
+        width: 100%;
+        height: 40px;
+        color: white;
+        font-weight: 500;
+        font-size: 1.2em;
+        transition: 0.3s;
+    }
+    
+    #calcular:hover{
+        background-color: #d31e1e;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    
+    .linha{
+        background-color: #d31e1e;
+        height: 3px;
+        width: 50px;
+    }
+    
+    
+    input[type=number]{
+        width: 100%;
+        height: 30px;
+        background-color: rgb(85, 85, 85);
+        border: none;
+        outline: none;
+        font-size: 1.2em;
+        color: white;
+        padding: 5px;
+        letter-spacing: 2px;
+        transition: 0.3s;
+    }
+    
+    
+    input[type=number]:active{
+        background-color: rgb(94, 94, 94);
+        transition: 0.3s;
+    }
+    
+    
+    input, #calcular{
+        box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.322);
+    }
+    
+    
+    .parte1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #calculo{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 30px;
+        height: 100%;
+        background-color: rgb(48, 44, 44);
+        padding: 10px;
+    }
+    
+    
+    
+    .resultado{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border: 1px solid rgb(173, 173, 173);
+        border-left: 0;
+        border-right: 0;
+        width: 100%;
+        height: 150px;
+    }
+    
+    
+    #dado{
+        color: #d31e1e;
+        font-size: 2em;
+        font-weight: 400;
+    }
+    
+    
+    #carregando{
+        display: none;
+        margin: auto;
+        border: 3px solid white;
+        border-top: 5px solid rgb(226, 9, 9);
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        animation: rotate 1s infinite ease-in-out;
+    }
+    
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+    
+        50%{
+            transform: rotate(360deg);
+        }
+        
+        100%{
+            transform: rotate(1080deg);
+        }
+    }
+    
+}
